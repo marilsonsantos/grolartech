@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!--Titulo da Pagina/head do site-->
+        <title> GrolarTech - Especializada em Soluções Digitais </title>
+        <meta charset="UTF-8">
+        <!--Definição do site: definimos que a largura do site é igual a largura do dispositivo, e que a escala inicial do zoom é 1-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--Descrição do site-->
+        <meta name="description" content="Startup especializada em desenvolvimento Web e Aplicativos Mobile.">
+        <!--Palavras chaves do site-->
+        <meta name="keywords" content="Startup, Sites, Web, Aplicativos Mobile">
+        <!--Para o buscador do Google localizar a pagina com mais facilidade-->
+        <meta name="robots" content="index, fallow">
+        <!--Desenvolvedor-->
+        <meta name="author" content="Ariane Capisi, Larissa Carvalho e Marilson Santos">
+        <!--Link do style do CSS-->
+        <link rel="stylesheet" href="../css/style.css">
+        <!--Link da pagina com estilo de icones publicos-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <!--Link da pagina das fontes publicas do Google-->
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+        <!--Link do icone da Startup do head--> 
+        <link rel="icon" href="../img/icon.png">
+    </head>
+    <!--Corpo do Serviço-->
+    <body>
+        <!--Cabeçalho do serviço-->
+        <header class="cabecalho">
+            <!--Logo do cabeçalho-->
+            <a href="../index.html"><h1 class="logo"> GrolarTech - Especializada em Soluções Digitais </h1></a>
+            <!--Menu hamburguer do site para Dispositivos Mobile-->
+            <button class="btn-menu"> <i class="fa fa-bars fa-2x"></i> </button>
+            <nav class="menu">
+                <!--Botão para fechar as opções do menu-->
+                <a class="btn-close"> <i class="fa fa-times"></i> </a>
+                <!--Lista das opções de navegação do menu-->
+                <ul>
+                    <!--Lista de opções de navegação-->
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="servico.html">SERVIÇOS</a></li>
+                    <li><a href="produto.html">PRODUTO</a></li>
+                    <li><a href="sobre.html">SOBRE</a></li>
+                    <li><a href="contato.html">CONTATO</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--Conteudo/Seções do serviço-->
+        <!--Banner da pagina-->
+        <section class="banner banner-ser">
+            <!--Primeiro conteudo do banner-->
+            <section class="title">
+                <!--Titulo do banner-->
+                <h2> SERVIÇOS </h2>
+                <!--Subtitulo do banner-->
+                <h3>Oferecemos os mais variados tipos de serviços. Deixe a GrolarTech alavancar o seu negócio!</h3>
+            </section>
+        </section>
+        <!--Conteudo principal do serviço-->
+        <main class="servicos">
+            <!--Primeiro artigo do serviço-->
+            <article class="servico-ser">
+                <!--Imagem do artigo-->
+                <a href="#"><img src="../img/statistic-1820320.jpg" alt="Sites"></a>
+                <!--Conteudo do artigo-->
+                <section class="inner">
+                     <!--Link do conteudo-->
+                     <a href="#"> Desenvolvimento de Sites </a>
+                     <!--Titulo do conteudo-->
+                     <h4>Sites Administráveis</h4>
+                     <!--Primeiro texto-->
+                     <p>Com a GrollarTech você pode administrar seu site quando e como quiser. 
+					 <br>
+					 Nossa startup desenvolve seu site de forma automatizada e dinâmica, deixando-o sempre atualizado de acordo com a sua necessidade, integrando-o também às redes sociais. 
+					 <br>
+					 Possuímos uma excelente equipe de suporte para realizar o desenvolvimento e a manutenção do seu site, e auxiliar no bom funcionamento do seu negócio.</p>
+                </section>
+            </article>
+            <!--Segundo artigo da pagina-->
+            <article class="servico-ser">
+                <!--Imagem do artigo - 2-->
+                <a href="#"><img src="../img/teste.jpg" alt="E-commerce"></a>
+                <!--Conteudo do artigo - 2-->
+                <section class="inner">
+                     <!--Link do conteudo - 2-->
+                     <a href="#"> E-commerce </a>
+                     <!--Titulo do conteudo - 2-->
+                     <h4>Tecnologia, Inovação e Desenvolvimento</h4>
+                     <!--Segundo texto-->
+                     <p>Como uma Startup de desenvolvimento e inovação, aplicamos as melhores práticas de desenvolvimento web nos meios digitais para que o seu negócio seja visto por milhões de usuários e seus produtos estejam disponíveis para compra 24h por dia, todos os dias. 
+					 <br>
+					 Oferecemos praticidade nas suas vendas e auxílio no crescimento de seu negócio. 
+					 <br>
+					 O Brasil é o 5º país maus conectado no mundo, e você não pode ficar de fora!</p>
+                </section>
+            </article>
+        </main>
+        <!--Rodape da site-->
+        <footer class="rodape">
+            <!--Conteudo do rodape-->
+            <section class="social-icons">
+                <!--Icones - Redes Sociais-->
+                <a href="#"> <i class="fa fa-facebook fa-lg"></i> </a>
+                <a href="#"> <i class="fa fa-twitter fa-lg"></i> </a>
+                <a href="#"> <i class="fa fa-google fa-lg"></i> </a>
+                <a href="#"> <i class="fa fa-instagram fa-lg"></i> </a>
+                <!--Direitos reservados do site-->
+	            <p class="copyright"><a href="#">Copyright &copy; GrolarTech 2016. Todos os direitos reservados.</a></p>
+            </section>
+        </footer>
+        <!--jQuery-->
+        <!--Link da biblioteca jQuery-->
+        <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <!--Script para ações do site-->
+        <script>
+        /*Função que inicia o menu Mobile*/
+        $(".btn-menu").click(function(){
+          $(".menu").show();
+        });
+        /*Função para fechar o menu Mobile*/
+        $(".btn-close").click(function(){
+          $(".menu").hide();
+        });
+        </script>
+    </body>
+</html>
